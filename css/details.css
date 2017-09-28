@@ -1,0 +1,185 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+  width: 100%;
+}
+#header .logo > img {
+  height: 25px;
+}
+#header .app > img {
+  height: 34px;
+}
+.search {
+  padding: 10px;
+  background-color: #fff;
+}
+.search form {
+  padding-right: 70px;
+  position: relative;
+}
+.search form input[type="search"] {
+  border: 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  padding-left: 15px;
+}
+.search form input[type="submit"] {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: #000;
+}
+.sale {
+  width: 100%;
+  background-color: #ff841d;
+  padding: 10px;
+}
+.sale span {
+  color: #fff;
+}
+.sale e {
+  display: inline-block;
+  width: 28px;
+  height: 23px;
+  background: url(../images/icon_bar.png) -53px -55px no-repeat / 220px 132px;
+}
+.more {
+  margin: 10px 0;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #fff;
+}
+.login {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  background-color: #ddd;
+  border: 1px solid #999;
+}
+.login div {
+  text-align: center;
+  width: 30%;
+}
+.login .ft {
+  width: 40%;
+}
+.login .zc {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+.down {
+  background-color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  color: red;
+  text-align: center;
+  border: 1px solid #999999;
+}
+.commodity {
+  padding: 0 10px;
+  margin-top: 5px;
+  height: 38px;
+  line-height: 38px;
+}
+.commodity > span {
+  font-weight: 700;
+}
+.commodity > span:after {
+  content: ">";
+}
+.commodity > a {
+  display: block;
+  float: right;
+  height: 28px;
+  line-height: 28px;
+  background-color: #d0d0d0;
+  padding: 0 16px;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+.concreteness {
+  background-color: #fff;
+  padding-top: 15px;
+}
+.concreteness > h4 {
+  padding: 0 15px;
+  text-align: center;
+}
+.concreteness .tp {
+  text-align: center;
+  position: relative;
+}
+.concreteness .tp img {
+  width: 160px;
+}
+.concreteness .tp > span {
+  background-color: plum;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 55px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+}
+.concreteness .parameters > div {
+  width: 33.33%;
+  float: left;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background-color: orange;
+  color: #fff;
+  font-size: 16px;
+  border-top: 2px solid palevioletred;
+}
+.concreteness .parameters div:nth-child(2) {
+  border-right: 1px solid palevioletred;
+  border-left: 1px solid palevioletred;
+}
+.concreteness .fwq {
+  padding: 20px;
+}
+.concreteness .ditch > div {
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  font-size: 15px;
+  border-bottom: 1px solid palevioletred;
+}
+.concreteness .ditch div:nth-child(1) {
+  background: url(http://sf.manmanbuy.com/images/sitelogo/1.png) center no-repeat;
+}
+.concreteness .ditch div:nth-child(3) {
+  color: red;
+}
+.concreteness .text {
+  padding: 0 10px;
+  font-size: 14px;
+  border-bottom: 3px solid #666;
+}
+.take {
+  padding: 10px;
+}
+.take .taketop {
+  margin-top: 10px;
+  background-color: #fff;
+  font-size: 14px;
+  padding: 5px;
+}
+.take .takebttom {
+  padding: 5px;
+  background-color: #fff;
+}

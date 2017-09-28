@@ -1,0 +1,149 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+  width: 100%;
+}
+#header .logo > img {
+  height: 25px;
+}
+#header .app > img {
+  height: 34px;
+}
+.search {
+  padding: 10px;
+  background-color: #fff;
+}
+.search form {
+  padding-right: 70px;
+  position: relative;
+}
+.search form input[type="search"] {
+  border: 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  padding-left: 15px;
+}
+.search form input[type="submit"] {
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: #000;
+}
+.sale {
+  width: 100%;
+  background-color: #ff841d;
+  padding: 10px;
+}
+.sale span {
+  color: #fff;
+}
+.sale e {
+  display: inline-block;
+  width: 28px;
+  height: 23px;
+  background: url(../images/icon_bar.png) -53px -55px no-repeat / 220px 132px;
+}
+.more {
+  margin: 10px 0;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #fff;
+}
+.login {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  background-color: #ddd;
+  border: 1px solid #999;
+}
+.login div {
+  text-align: center;
+  width: 30%;
+}
+.login .ft {
+  width: 40%;
+}
+.login .zc {
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+}
+.down {
+  background-color: #ffffff;
+  height: 30px;
+  line-height: 30px;
+  color: red;
+  text-align: center;
+  border: 1px solid #999999;
+}
+.commodity {
+  padding: 0 10px;
+  margin-top: 5px;
+  height: 38px;
+  line-height: 38px;
+}
+.commodity > span {
+  font-weight: 700;
+}
+.commodity > span:after {
+  content: ">";
+}
+.commodity > a {
+  display: block;
+  float: right;
+  height: 28px;
+  line-height: 28px;
+  background-color: #d0d0d0;
+  padding: 0 16px;
+  margin-top: 4px;
+  border-radius: 5px;
+}
+.product ul li {
+  margin-top: 5px;
+  padding: 0 5px;
+  background-color: #fff;
+}
+.product ul li div img {
+  width: 100px;
+  float: left;
+}
+.product ul li div .text {
+  padding-left: 110px;
+  font-size: 14px;
+}
+.product ul li div .text h5 {
+  line-height: 22px;
+}
+.product ul li div .text .rmb {
+  color: red;
+}
+.jump {
+  margin-top: 5px;
+}
+.jump div {
+  width: 33.3333%;
+  float: left;
+  background-color: #d4d4d4;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 10px;
+}
+.jump .fy {
+  background: none;
+  border-radius: none;
+}
+.jump .fy select {
+  padding: 4px 15px;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/commodity.css">
+  <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+  <!--顶部  -->
+  <header id="header" class="clearfix ">
+    <a href="javascript:;" class="logo fl">
+      <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="javascript:;" class="app fr">
+      <img src="images/header_app.png" alt="">
+    </a>
+  </header>
+
+  <!--搜索  -->
+  <section class="search ">
+    <form action="#">
+      <input type="search" placeholder="book">
+      <input type="submit" value="搜索">
+    </form>
+  </section>
+
+  <!--首页 全部产品   -->
+  <section class="commodity">
+    <span> 
+      <a href="index.html">首页</a> 
+    </span>
+    <span>
+      <a href="category.html">全部分类</a>
+    </span>
+    <span class="tv">电视</span>
+    <a href="#">筛选</a>
+  </section>
+
+  <!-- 产品详细内容 -->
+
+  <section class="product">
+    <ul>
+      <!-- <li>
+        <div class=" clearfix">
+          <img src="http://pro.zuyushop.com:8015/ProPic/20159/Thumb/Thumb_2015090009064857056.jpg" alt="">
+          <div class="text">
+            <h5>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h5>
+            <p class="rmb">$1999</p>
+            <p class="take">
+              <span>
+               <a href=""> 评论</a>
+              </span>
+              <span>
+               <a href="">报价</a> 
+              </span>
+            </p>
+          </div>
+        </div>
+      </li> -->
+    </ul>
+  </section>    
+
+  <!-- 上一页 下一页 -->
+  <section class="jump clearfix">
+    <div><a href="javascript:;" class="pre">上一页</a> </div>
+    <div class="fy">
+      <select >
+        <!-- <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option> -->
+      </select>
+    </div>
+    <div><a href="javascript:;" class="nex">下一页</a></div>
+
+  </section>
+
+  <!--更多优惠信息  -->
+
+  <section class="more">
+    <p>更多优惠信息</p>
+  </section>
+
+
+   <!--更多优惠  -->
+  <section class="sale clearfix">
+    <span>更多优惠信息</span>
+    <e class="fr"> </e>
+  </section>
+  <!--登录注册  -->
+
+  <section class="login clearfix">
+    <div class="fl">登录</div>
+    <div class="fl zc">注册</div>
+    <div class="ft fl">返回顶部</div>
+
+  </section>
+  <!--手机app  -->
+  <section class="down">
+    <p>手机APP下载</p>
+  </section>
+
+
+
+
+  <script type="text/template" id="getprodect">
+    {{each result as value}}
+      <li>
+          <a href="./details.html?productId={{value.productId}}">
+              <div class=" clearfix">
+                  {{#value.productImg}}
+                  <!-- <img src="http://pro.zuyushop.com:8015/ProPic/20159/Thumb/Thumb_2015090009064857056.jpg" alt=""> -->
+                  <div class="text">
+                    <h5>{{value.productName}}</h5>
+                    <p class="rmb">{{value.productPrice}}</p>
+                    <p class="take">
+                      <span>
+                      {{value.productQuote}}
+                      </span>
+                      <span>
+                      {{value.productCom}} 
+                      </span>
+                    </p>
+                  </div>
+                </div>
+          </a>
+        </li>
+    {{/each}}
+  </script>
+
+  
+  
+
+ 
+
+
+
+
+
+
+
+
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js">
+
+  </script>
+  <script src="js/url.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/commodity.js"></script>
+</body>
+
+</html>

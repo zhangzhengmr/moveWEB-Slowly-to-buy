@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+  <!--顶部  -->
+  <header id="header" class="clearfix ">
+    <a href="javascript:;" class="logo fl">
+      <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="javascript:;" class="app fr">
+      <img src="images/header_app.png" alt="">
+    </a>
+  </header>
+
+  <!--搜索  -->
+  <section class="search ">
+    <form action="#">
+      <input type="search" placeholder="book">
+      <input type="submit" value="搜索">
+    </form>
+  </section>
+
+  <!--导航  -->
+  <section class="nav clearfix">
+    <!-- <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div>
+    <div class="navbar fl">
+      <img src="img/haitao.png" alt="">
+      <p>比价搜索</p>
+    </div> -->
+  </section>
+
+
+  <!--更多优惠  -->
+  <section class="sale clearfix">
+    <span>更多优惠信息</span>
+    <e class="fr"> </e>
+  </section>
+
+  <!--商品展示  -->
+  <section id="article">
+     <!-- <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object" src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="...">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">移动端凑单品：海天 鲜味 生抽 1.28L</h4>
+        <span>10.9元</span>
+        <p class="clearfix">
+          <sapn class="fl">京东商城&nbsp;| 10-25 14:10</sapn>
+          <sapn class="fr">有1人评论</sapn>
+        </p>
+      </div>
+    </div>  -->
+  </section>
+
+  <!--更多优惠信息  -->
+
+  <section class="more">
+    <p>更多优惠信息</p>
+  </section>
+
+
+   <!--更多优惠  -->
+  <section class="sale clearfix">
+    <span>更多优惠信息</span>
+    <e class="fr"> </e>
+  </section>
+  <!--登录注册  -->
+
+  <section class="login clearfix">
+    <div class="fl">登录</div>
+    <div class="fl zc">注册</div>
+    <div class="ft fl">返回顶部</div>
+
+  </section>
+  <!--手机app  -->
+  <section class="down">
+    <p>手机APP下载</p>
+  </section>
+
+
+
+
+
+
+  <script type="text/template" id="getMenu">  
+    {{each result as value}}
+      <div class="navbar fl  ">
+        <a href="{{value.titlehref}}">
+
+          {{#value.img}}
+          <p>{{value.name}}</p>
+        </a>
+      </div>
+    {{/each}}
+  </script>
+
+   <script type="text/template" id="getaaa">
+    {{each result as value }}
+       <!-- <div class="media clearfix"> 
+          <div class="media-left">
+            <a href="#">
+              {{#value.productImg2}}
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">{{value.productName}}</h4>
+            <span>{{value.productPinkage}}</span>
+             <p class="clearfix">
+              <sapn class="fl">{{value.productFrom}}  &nbsp;| {{value.productTime}}</sapn>
+              <sapn class="fr">{{value.productComCount}}</sapn>
+            </p> 
+          </div>
+       <div>  -->
+         <div class="media clearfix">
+        <div class="media-left">
+          <a href="javascript:;">
+            {{#value.productImg2}}
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{value.productName}}</h4>
+          <span class="media-red">{{value.productPinkage}}</span>
+          <div class="other">
+            <span class="left">{{value.productFrom}}  &nbsp;| {{value.productTime}}</span>
+            <span class="right">{{value.productComCount}}</span>
+          </div>
+        </div>
+      </div>
+
+    {{/each}}
+
+    
+    </script> 
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js">
+
+  </script>
+  <script src="js/url.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

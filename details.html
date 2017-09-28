@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/details.css">
+  <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+  <!--顶部  -->
+  <header id="header" class="clearfix ">
+    <a href="javascript:;" class="logo fl">
+      <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="javascript:;" class="app fr">
+      <img src="images/header_app.png" alt="">
+    </a>
+  </header>
+
+  <!--搜索  -->
+  <section class="search ">
+    <form action="#">
+      <input type="search" placeholder="book">
+      <input type="submit" value="搜索">
+    </form>
+  </section>
+
+  <!--首页 全部产品   -->
+  <section class="commodity">
+    <span> 
+      <a href="index.html">首页</a> 
+    </span>
+    <span>
+      <a href="category.html">全部分类</a>
+    </span>
+    <span class="tv">电视</span>
+    <a href="#">筛选</a>
+  </section>
+
+
+  <!-- 具体商品 -->
+  <section class="concreteness ">
+    <!-- <h4>乐视电视乐视电视乐视电视乐视电视乐视电视乐视电视乐视电视乐视电视乐视电视</h4>
+    <div class="tp">
+      <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="">
+      <span>收藏</span>
+    </div> -->
+
+    <!-- 商品参数 -->
+    <!-- <div class="parameters clearfix">
+      <div>比价搜索</div>
+      <div>产品参数</div>
+      <div>评论(999+)</div>
+    </div> -->
+
+    <!-- 商品渠道 -->
+    <!-- <div class="ditch clearfix">
+      <div></div>
+      <div>京东商城</div>
+      <div>$9999</div>
+      <div>
+        <a href="javascript:;">去购买</a>
+      </div>
+    </div> -->
+    <!-- 声明 -->
+    <!-- <div class="text">
+       * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div> -->
+  </section>
+
+  <!-- 评论 -->
+  <section class="take">
+    <!-- <div class="taketop clearfix">
+      <span class="fl">
+        匿名
+      </span>
+      <span class="fr">
+        2017-09-09
+      </span>
+    </div>
+    <div class="takebttom">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>       -->
+  </section>
+
+  <!--更多优惠信息  -->
+
+  <section class="more">
+    <p>更多优惠信息</p>
+  </section>
+
+
+   <!--更多优惠  -->
+  <section class="sale clearfix">
+    <span>更多优惠信息</span>
+    <e class="fr"> </e>
+  </section>
+  <!--登录注册  -->
+
+  <section class="login clearfix">
+    <div class="fl">登录</div>
+    <div class="fl zc">注册</div>
+    <div class="ft fl">返回顶部</div>
+
+  </section>
+  <!--手机app  -->
+  <section class="down">
+    <p>手机APP下载</p>
+  </section>
+
+
+
+
+  <script type="text/template" id="getconcreteness">
+    {{each result as value}}
+      <h4>{{value.productName}}</h4>
+      <div class="tp">
+          {{#value.productImg}}
+        <!-- <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt=""> -->
+        <span>收藏</span>
+      </div>
+
+      <!-- 商品参数 -->
+      <div class="parameters clearfix">
+        <div>比价搜索</div>
+        <div>产品参数</div>
+        <div>评论(999+)</div>
+      </div>
+      <div class="fwq">
+        {{#value.bjShop}}
+      </div>
+      <!-- 商品渠道 -->
+      <!-- <div class="ditch clearfix">
+        <div></div>
+        <div>京东商城</div>
+        <div>$9999</div>
+        <div>
+          <a href="javascript:;">去购买</a>
+        </div>
+      </div> -->
+      <!-- 声明 -->
+      <div class="text">
+        * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+      </div>
+    {{/each}}  
+  
+  </script>
+
+
+
+  <script type="text/template" id="gettake">
+    {{each result as value}}
+      <div class="taketop clearfix">
+          <span class="fl">
+            {{value.comName}}
+            {{value.comFrom}}
+          </span>
+          <span class="fr">
+            {{value.comTime}}
+          </span>
+        </div>
+        <div class="takebttom">
+          {{value.comContent}}
+        </div>      
+  
+  
+    {{/each}}
+  
+  </script>
+
+
+
+
+
+
+
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js">
+
+  </script>
+  <script src="js/url.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/details.js"></script>
+</body>
+
+</html>

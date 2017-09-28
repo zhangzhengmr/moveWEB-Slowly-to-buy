@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/list.css">
+  <script src="lib/less/less.js"></script>
+</head>
+
+<body>
+  <!--顶部  -->
+  <header id="header" class="clearfix ">
+    <a href="javascript:;" class="logo fl">
+      <img src="images/header_logo.png" alt="">
+    </a>
+    <a href="javascript:;" class="app fr">
+      <img src="images/header_app.png" alt="">
+    </a>
+  </header>
+
+  <!--搜索  -->
+  <section class="search ">
+    <form action="#">
+      <input type="search" placeholder="book">
+      <input type="submit" value="搜索">
+    </form>
+  </section>
+
+  <section class="list">
+    <ul class="listcontent">
+     <!--  <li>
+        <a href="javascript:;">大家电</a>
+        <ul class="clearfix">
+          <li>小米电视机</li>
+          <li>小米电视机</li>
+          <li>小米电视机</li>
+          <li>小米电视机</li>
+        </ul>
+      </li> -->
+    </ul>
+  </section>
+   
+
+  <!--更多优惠信息  -->
+
+  <section class="more">
+    <p>更多优惠信息</p>
+  </section>
+
+
+   <!--更多优惠  -->
+  <section class="sale clearfix">
+    <span>更多优惠信息</span>
+    <e class="fr "> </e>
+  </section>
+  <!--登录注册  -->
+
+  <section class="login clearfix">
+    <div class="fl">登录</div>
+    <div class="fl zc">注册</div>
+    <div class="ft fl">返回顶部</div>
+
+  </section>
+  <!--手机app  -->
+  <section class="down">
+    <p>手机APP下载</p>
+  </section>
+
+ 
+  <script type="text/template" id="getlist">
+    {{each result as value}}
+    <li>
+      <a href="javascript:;" data-title-id={{value.titleId}} class="djd">{{value.title}}</a>
+      <ul class="clearfix">
+      </ul>
+    </li>
+    {{/each}}
+  </script>
+
+  <script type="text/template" id="getcontent">
+  
+  {{each result as value}}
+  <li>
+    <a href="list.html?categoryid={{value.categoryId}}&category={{value.category}}&pageid=1">
+
+      {{value.category}}
+    </a>
+  </li>
+  {{/each}}
+  </script>
+
+
+
+
+
+  <script src="lib/jquery/jquery.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.js"> </script>
+  <script src="js/url.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/list.js"></script>
+</body>
+
+</html>
